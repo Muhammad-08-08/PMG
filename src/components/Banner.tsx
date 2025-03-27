@@ -17,7 +17,7 @@ function Banner() {
   const [banner, setBanner] = useState<BannerType>();
 
   useEffect(() => {
-    axios.get("https://nt.softly.uz/api/public/banners").then((response) => {
+    axios.get("https://nt.softly.uz/api/front/banners").then((response) => {
       setBanner(response.data);
     });
   }, []);

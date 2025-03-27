@@ -13,9 +13,9 @@ function CardPage({ items }: CardPageProps) {
             <Image
               src={item.imageUrl}
               alt={item.name}
-              width={300}
-              height={200}
-              className="rounded-t-lg object-cover"
+              width={0}
+              height={0}
+              className="w-full h-[30vh] rounded-t-lg object-cover"
             />
             <button className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition cursor-pointer">
               <Heart className="text-red-500" size={20} />

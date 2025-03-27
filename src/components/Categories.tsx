@@ -8,7 +8,7 @@ function Categories() {
   const [categories, setCategories] = useState<CategoriesType>();
 
   useEffect(() => {
-    axios.get("https://nt.softly.uz/api/public/categories").then((response) => {
+    axios.get("https://nt.softly.uz/api/front/categories").then((response) => {
       setCategories(response.data);
     });
   }, []);
