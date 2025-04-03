@@ -1,11 +1,14 @@
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import Link from "next/link";
 import { FiHeart, FiShoppingCart, FiUser } from "react-icons/fi";
 
 function Navbar() {
   return (
     <div className="flex items-center gap-5 justify-between p-4 shadow-md bg-white px-10">
-      <div className="text-xl font-bold mr-10">Logo</div>
+      <Link href={"/"}>
+        <div className="text-xl font-bold mr-10">Logo</div>
+      </Link>
 
       <div className="relative w-full">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />

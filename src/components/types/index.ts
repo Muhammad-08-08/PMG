@@ -32,3 +32,14 @@ export type ProductsType = {
 export type CardPageProps = {
   items: ProductsType["items"];
 };
+
+export type ProductPageType = {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  stock: number;
+  categoryId: number;
+  createdAt: string;
+  imageUrl: string;
+};

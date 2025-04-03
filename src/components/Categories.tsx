@@ -3,6 +3,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { CategoriesType } from "./types";
+import Link from "next/link";
 
 function Categories() {
   const [categories, setCategories] = useState<CategoriesType>();
@@ -14,11 +15,13 @@ function Categories() {
   }, []);
 
   return (
-    <div className="flex justify-between px-10 py-5 select-none">
+    <div className="flex gap-7 items-center px-10 py-5 select-none">
       {categories?.map((item) => {
         return (
           <div key={item.id}>
-            <p className="cursor-pointer">{item.name}</p>
+            <Link href={`/categories/${item.id}`}>
+              <p className="cursor-pointer">{item.name}</p>
+            </Link>
           </div>
         );
       })}
