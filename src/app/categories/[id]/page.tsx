@@ -6,7 +6,7 @@ import axios from "axios";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-function page() {
+function Page() {
   const { id } = useParams();
   const [categories, setCategories] = useState<ProductsType>();
   useEffect(() => {
@@ -15,7 +15,7 @@ function page() {
       .then((response) => {
         setCategories(response.data);
       });
-  }, []);
+  }, [id]);
 
   if (!categories?.items) {
     return (
@@ -26,7 +26,7 @@ function page() {
   } else if (categories.items.length === 0) {
     return (
       <div className="text-center text-gray-600 text-xl font-semibold bg-white p-6 rounded-lg">
-        ❌ Ma'lumot topilmadi
+        {"❌ Ma'lumot topilmadi"}
       </div>
     );
   }
@@ -38,4 +38,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

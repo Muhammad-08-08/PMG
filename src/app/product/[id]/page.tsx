@@ -48,7 +48,7 @@ function Page() {
             </p>
 
             <Button className="w-full md:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-lg transition">
-              Savatga Qo'shish
+              {"Savatga Qo'shish"}
             </Button>
           </div>
         </div>

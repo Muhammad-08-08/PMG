@@ -4,8 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { ProductsType } from "./types";
 import CardPage from "./CardPage";
-import { Button } from "@/components/ui/button"; // ShadCN Button komponenti
-import Link from "next/link";
+import { Button } from "./ui/button";
 
 function Products() {
   const [products, setProducts] = useState<ProductsType | null>(null);

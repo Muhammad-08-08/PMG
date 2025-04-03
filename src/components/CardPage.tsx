@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import { CardPageProps } from "./types";
 import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 function CardPage({ items }: CardPageProps) {
   return (
